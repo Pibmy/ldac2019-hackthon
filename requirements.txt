@@ -2,3 +2,4 @@ influxdb>=5.2.2
 jupyter>=1.0.0
 pandas>=0.23
 pystardog>=0.9.3
+svgwrite>=1.2.1 
