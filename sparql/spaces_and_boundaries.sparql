@@ -1,0 +1,9 @@
+PREFIX bot: <https://w3id.org/bot#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/systems/>
+PREFIX props: <https://w3id.org/props#>
+
+SELECT * WHERE {
+    ?space a bot:Space ;
+        props:spaceBoundary ?o
+}
