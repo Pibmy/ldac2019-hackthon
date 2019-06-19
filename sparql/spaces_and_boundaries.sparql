@@ -2,8 +2,11 @@ PREFIX bot: <https://w3id.org/bot#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX ssn: <http://www.w3.org/ns/ssn/systems/>
 PREFIX props: <https://w3id.org/props#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT * WHERE {
-    ?space a bot:Space ;
-        props:spaceBoundary ?o
+SELECT ?space ?boundary WHERE {
+    ?s a bot:Space ;
+        props:spaceBoundary ?boundary .
+    
+    ?s skos:related ?space . 
 }

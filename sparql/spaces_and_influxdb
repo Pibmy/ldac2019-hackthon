@@ -1,0 +1,22 @@
+PREFIX RelDBConInfo: <example>
+PREFIX influxdb: <example2>
+PREFIX bot: <https://w3id.org/bot#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/systems/>
+PREFIX props: <https://w3id.org/props#>
+
+SELECT ?TIMEOUT ?DB ?HOST ?PW ?PORT ?USERNAME ?needSSL ?VERSSL ?SensorTYPE
+       WHERE {
+           ?space a bot:Space
+        OpenSmartHomeDataSet:%s RelDBConInfo:hasRDBSInst ?BN .
+        ?BN RelDBConInfo:hasRDBSConn ?x .
+       ?x RelDBConInfo:hasConnectionClient ?y .
+       ?y influxdb:Timeout ?TIMEOUT .
+       ?y influxdb:hasDatabase ?DB .
+       ?y influxdb:hasHost ?HOST .
+       ?y influxdb:hasPassword ?PW .
+       ?y influxdb:hasPort ?PORT .
+       ?y influxdb:hasUsername ?USERNAME .
+       ?y influxdb:needsSSL ?needSSL .
+       ?y influxdb:verifySSL ?VERSSL .
+       }

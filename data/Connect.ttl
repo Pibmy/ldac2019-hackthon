@@ -1,0 +1,150 @@
+@prefix OpenSmartHomeDataSet: <https://w3id.org/ibp/osh/OpenSmartHomeDataSet#> .
+@prefix RelDBConInfo: <https://example.de/products/RelDBConInfo.ttl#> .
+@prefix influxdb: <https://example.de/RelDataBases/influxdb.ttl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+OpenSmartHomeDataSet:Bathroom-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Bathroom" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Bathroom-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Bathroom" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Bathroom-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Bathroom" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Bathroom-tempT-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Bathroom" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempT" ] .
+
+OpenSmartHomeDataSet:Kitchen-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Kitchen" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Kitchen-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Kitchen" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Kitchen-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Kitchen" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Kitchen-tempT-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Kitchen" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempT" ] .
+
+OpenSmartHomeDataSet:Room1-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room1" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Room1-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room1" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Room1-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room1" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Room1-tempT-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room1" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempT" ] .
+
+OpenSmartHomeDataSet:Room2-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room2" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Room2-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room2" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Room2-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room2" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Room2-tempT-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room2" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempT" ] .
+
+OpenSmartHomeDataSet:Room3-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Room3-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Room3-outTemp-OutSensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "outTemp" ] .
+
+OpenSmartHomeDataSet:Room3-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Room3-tempTli-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempTli" ] .
+
+OpenSmartHomeDataSet:Room3-tempTre-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Room3" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempTre" ] .
+
+OpenSmartHomeDataSet:Toilet-brigh-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Toilet" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Brightness" ] .
+
+OpenSmartHomeDataSet:Toilet-humid-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Toilet" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Humidity" ] .
+
+OpenSmartHomeDataSet:Toilet-temp-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Toilet" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "Temperature" ] .
+
+OpenSmartHomeDataSet:Toilet-tempT-Sensor a sosa:Sensor ;
+    RelDBConInfo:hasRDBSInst [ RelDBConInfo:hasLoc "Toilet" ;
+            RelDBConInfo:hasRDBSConn RelDBConInfo:ConInfo1 ;
+            RelDBConInfo:hasTypeOfSens "tempT" ] .
+
+influxdb:Client influxdb:Timeout "5000" ;
+    influxdb:hasDatabase "mydb" ;
+    influxdb:hasHost "localhost" ;
+    influxdb:hasPassword "root" ;
+    influxdb:hasPort "8086" ;
+    influxdb:hasUsername "root" ;
+    influxdb:needsSSL "False" ;
+    influxdb:verifySSL "False" .
+
+RelDBConInfo:ConInfo1 RelDBConInfo:hasConnectionClient influxdb:Client .
+
